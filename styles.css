@@ -1,0 +1,72 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    justify-content: center;
+    height: 20px;
+    align-items: baseline;
+    display: flow-root;
+    font-family: sans-serif;
+    font: 10px; 
+}
+
+/* the container */ 
+.math games {
+    width: 250px;
+    height: 200px;
+    padding: 10px;
+    box-shadow: 2px 5px 10px #36345e;
+    background: #58345e;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input {
+    background-color: rgb(212, 255, 0);
+    border: 3px solid black;
+    margin: 4px;
+    padding: 4px;
+    border: 1px; color: tomato;
+}
+.burgundy {
+    color: #5b345e;
+}
+.aquamarine {
+    color: aquamarine;
+}
+
+.math games span {
+    font: 60px; 
+}
+
+button {
+border: none
+font-size: 30px;
+color: #fff;
+border-radius: 2px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+.items{
+    width: 100px;
+    padding: 10px;
+    margin: 5px 0;
+}
+.modal-container {
+    border: 2px solid;
+    position: absolute;
+    height: 200px;
+    width: 300px;
+    bottom: 40px;
+    right: 50px;
+    padding: 20px;
+}

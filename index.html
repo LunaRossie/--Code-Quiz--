@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Game</title>
+    <link rel="stylesheet" href="math games.css">
+    <link rel="stylesheet" href="styles.css">
+    <img src="https://i.ytimg.com/vi/9kjX0nCyzJg/maxresdefault.jpg"
+    <link rel="./Assets/04-web-apis-homework-demo.gif"
+
+</head>
+<body>
+    <h1>Click the START button to start the Math Quiz</h1>
+
+    <!-- Code Game -->
+    <div class="math games">
+    <span class="items">  
+        <span class="burgundy">10</span> - <span class="aquamarine">5</span> = ?
+    </span>
+    <div id="center">
+    <ul>
+    <p id="message"></p>
+    <p id="options"></p>
+    <p id="click"></p>
+    <p id="comment"></p>
+</ul>
+</div>
+
+
+    <input id="input-el" type="text" class="items" placeholder="type your answer">
+    <button id="checkBtn" class="items">answer</button>
+
+
+<span>
+    <div id="highScore">High Score: 0</div>
+    <div id="currentScore">Current Score: 0</div>
+    <button id="startBtn" onclick="startGame()">START</button>
+    <div id="timeDisplay"hidden>Time left: 10</div>
+</span>
+    </div>
+    
+
+<!-- Modal for right and wrong answers--> 
+
+<div id="myModal" class="model-container">
+    <span class="close"></span>
+    <p class="theAnswer">What is the answer?</p>
+
+</div>
+
+<script>
+
+
+    let timeLeft = 10;
+    let timerInterval;
+    let score = 0;
+    function startGame()
+    {
+
+        let timeDisplay = document.getElementById("timeDisplay");
+        timeDisplay.hidden = false;
+        timerInterval = setInterval(function(){
+            timeLeft -= 1;
+            
+            timeDisplay.innerHTML = "Time Left: " + timeLeft;
+            if (timeLeft == 0) 
+            {
+                clearInterval(timerInterval);
+            }
+        },1000)
+    }
+</script>
+
+    <script src="script.js"></script>
+</body>
+</html>
