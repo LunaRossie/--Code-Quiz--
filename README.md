@@ -10,7 +10,7 @@ Table of Contents
 
 ## Description
 
-
+The project was designed for Math quiz application using HTML, CSS, and JavaScript. This application emphasizes the use of JavaScript to collect user data to determine whether the answers to a questions are correct, if not then this shows a right or wrong answer. The user can also demonstrate a minimal use of the competency from Basic to Expect.
 
 ## Instruction
 

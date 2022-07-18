@@ -4,75 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Game</title>
-    <link rel="stylesheet" href="math games.css">
+    <title>Math Quiz</title>
+    <link rel="shortcut icon" type="image/jpg" href="Images/favicon.PNG"/>
     <link rel="stylesheet" href="styles.css">
-    <img src="https://i.ytimg.com/vi/9kjX0nCyzJg/maxresdefault.jpg">
-    <link rel="./Assets/04-web-apis-homework-demo.gif">
-
+    <img src="https://i.ytimg.com/vi/9kjX0nCyzJg/maxresdefault.jpg";>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    
 </head>
 <body>
-    <h1>Click the START button to start the Math Quiz</h1>
-
-    <!-- Code Game -->
-    <div class="math games">
-    <span class="items">  
-        <span class="burgundy">10</span> - <span class="aquamarine">5</span> = ?
-    </span>
-    <div id="center">
-    <ul>
-    <p id="message"></p>
-    <p id="options"></p>
-    <p id="click"></p>
-    <p id="comment"></p>
-</ul>
-</div>
-
-
-    <input id="input-el" type="text" class="items" placeholder="type your answer">
-    <button id="checkBtn" class="items">answer</button>
-
-
-<span>
-    <div id="highScore">High Score: 0</div>
-    <div id="currentScore">Current Score: 0</div>
-    <button id="startBtn" onclick="startGame()">START</button>
-    <div id="timeDisplay"hidden>Time left: 10</div>
-</span>
+    <span id="logo">Math Quiz</span>
+    <div class="titlebar">
+        <div id="count">
+            <img src="https://image.thenounproject.com/icons/svg/noun-math-105979020.svg"><span id="total">0</span>
+        </div>
+        <div id="count">
+            <img src="https://image.thenounproject.com/icons/svg/noun-math-3946967.svg"><span id="correct">0</span>
+        </div>
+        <div id="count">
+            <img src="https://image.thenounproject.com/icons/svg/noun-abacus-2000357.svg"><span id="wrong">0</span>
+        </div>
     </div>
+
+
+    <div id="diff">
+        <h2>Select Challenge</h2>
+        <button onclick="level(1)">Novice</button><br />
+        <button onclick="level(2)">Intermediate</button><br />
+        <button onclick="level(3)">Proficient</button><br />
+        <button onclick="level(4)">Expert</button>
+        <div style="height:30px"></div>
+    </div>
+
+    <div id="quizbody">
+        <div style="height:40px"></div>
+        <div id='serial'><span>Question. </span><span id='no'>1</span></div>
+        <p id="question"></p>
+
+        <center><div id="timer">
+            <div id="bar"></div>
+        </div></center>
+
+        <br />
+        <input id="answer" readonly>
+        <button id="del" style="width:35px;padding:5px;">←</button>
+        <br />
+        <button id="donebtn" onclick="check()">Done</button>
+        <div id="nums">     
+            <button onclick="ins(1)">1</button>
+            <button onclick="ins(2)">2</button>
+            <button onclick="ins(3)">3</button>
+            <button onclick="ins(4)">4</button>
+            <br />
+            <button onclick="ins(5)">5</button>
+            <button onclick="ins(6)">6</button>
+            <button onclick="ins(7)">7</button>
+            <button onclick="ins(8)">8</button>
+            <br />
+            <button onclick="ins(9)">9</button>
+            <button onclick="ins(0)">0</button>
+            <button onclick="ins('-')">-</button>
+            <button onclick="ins('.')">.</button>
+        </div>
+        <br />
+        <button id="res">Reset</button>
+    </div>
+        
+    <script src="generate.js"></script>
     
-
-<!-- Modal for right and wrong answers--> 
-
-<div id="myModal" class="model-container">
-    <span class="close"></span>
-    <p class="theAnswer">What is the answer?</p>
-
-</div>
-
-<script>
-
-
-    let timeLeft = 10;
-    let timerInterval;
-    let score = 0;
-    function startGame()
-    {
-
-        let timeDisplay = document.getElementById("timeDisplay");
-        timeDisplay.hidden = false;
-        timerInterval = setInterval(function(){
-            timeLeft -= 1;
-            
-            timeDisplay.innerHTML = "Time Left: " + timeLeft;
-            if (timeLeft == 0) 
-            {
-                clearInterval(timerInterval);
-            }
-        },1000)
-    }
-</script>
-
-    <script src="script.js"></script>
 </body>
 </html>
