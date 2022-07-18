@@ -10,11 +10,11 @@ Table of Contents
 
 ## Description
 
-The project was designed for Math quiz application using HTML, CSS, and JavaScript. This application emphasizes the use of JavaScript to collect user data to determine whether the answers to a questions are correct, if not then this shows a right or wrong answer. The user can also demonstrate a minimal use of the competency from Basic to Expect.
+The project was designed for Math quiz application using HTML, CSS, and JavaScript. This application emphasizes the use of JavaScript to collect user data to determine whether the answers to a questions are correct, if not then this shows a right or wrong answer. The user can also demonstrate a minimal use of the competency from Novice to Expect.
 
 ## Instruction
 
-The user must create a basic repository, and Clone the repo to vscode.
+The user must create a basic repository, and clone the repo to vscode. JavaScript contains declaring variables, selecting challenges, generating questions, timer, inserting numbers, and checking answers.
 
 ## Github
 
@@ -26,14 +26,17 @@ https://github.com/LunaRossie/--Code-Quiz--
 ## Video Link
 
 
-## Questions
+
+## Image source
+
+ <img src="https://i.ytimg.com/vi/9kjX0nCyzJg/maxresdefault.jpg"
+ 
+
+
+ ## Questions
 
 If you have any questions regarding this project, please reach out via email "Terminalbash2022@outlook.com". https://github.com/LunaRossie/--Code-Quiz--
 
-
-Background Image
-
- <img src="https://i.ytimg.com/vi/9kjX0nCyzJg/maxresdefault.jpg"
 
 ## Mock-Up
 

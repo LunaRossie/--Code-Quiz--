@@ -18,6 +18,7 @@ body {
 button, input {
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
+    border-radius: 0rem;
     
 }
 input {
@@ -60,9 +61,10 @@ input {
 #result {
     font-size: 25px;
     font-weight: bold;
+    
 }
 .titlebar {
-    margin: 10px;
+    margin-left: auto;
 }
 .titlebar img {
     height: 25px;
@@ -72,7 +74,7 @@ input {
 }
 #count {
     padding: 2px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     margin: 2px;
     color: rgba(13,120,207,1);
     border-radius: 10px;
@@ -86,11 +88,13 @@ input {
     font-weight: bold;
 }
 #count span {
-    font-size: 27px;
+    font-size: 20px;
     font-weight: bold;
+    text-decoration: underline;
+    border-radius: 6rem;
 }
 #logo {
-    font-size: 30px;
+    font-size: 60px;
     font-weight: bold;
 }
 #nums button {
@@ -100,6 +104,7 @@ input {
     text-decoration: overline;
     text-align: center;
     background-position: left;
+    
 }
 #timer, #bar {
     height: 10px;
@@ -122,3 +127,4 @@ input:focus, button:focus {
     outline-color: transparent;
     outline-style: none;
 }
+

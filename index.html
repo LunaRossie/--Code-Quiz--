@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Math Quiz</title>
-    <link rel="shortcut icon" type="image/jpg" href="Images/favicon.PNG"/>
     <link rel="stylesheet" href="styles.css">
     <img src="https://i.ytimg.com/vi/9kjX0nCyzJg/maxresdefault.jpg";>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
     
 </head>
 <body>
-    <span id="logo">Math Quiz</span>
+    <span id="logo"> Code Quiz</span>
     <div class="titlebar">
         <div id="count">
             <img src="https://image.thenounproject.com/icons/svg/noun-math-105979020.svg"><span id="total">0</span>
@@ -38,36 +38,33 @@
 
     <div id="quizbody">
         <div style="height:40px"></div>
-        <div id='serial'><span>Question. </span><span id='no'>1</span></div>
+        <div id='serial'><span>Solve</span>
         <p id="question"></p>
 
         <center><div id="timer">
             <div id="bar"></div>
         </div></center>
 
-        <br />
         <input id="answer" readonly>
         <button id="del" style="width:35px;padding:5px;">←</button>
-        <br />
-        <button id="donebtn" onclick="check()">Done</button>
+      
+        <button id="checkbtn" onclick="check()">Check</button>
         <div id="nums">     
             <button onclick="ins(1)">1</button>
             <button onclick="ins(2)">2</button>
             <button onclick="ins(3)">3</button>
-            <button onclick="ins(4)">4</button>
-            <br />
+            <button onclick="ins(4)">4</button>          
             <button onclick="ins(5)">5</button>
             <button onclick="ins(6)">6</button>
             <button onclick="ins(7)">7</button>
-            <button onclick="ins(8)">8</button>
-            <br />
+            <button onclick="ins(8)">8</button>            
             <button onclick="ins(9)">9</button>
             <button onclick="ins(0)">0</button>
             <button onclick="ins('-')">-</button>
             <button onclick="ins('.')">.</button>
         </div>
-        <br />
-        <button id="res">Reset</button>
+        
+        <button id="res">Refresh</button>
     </div>
         
     <script src="generate.js"></script>
