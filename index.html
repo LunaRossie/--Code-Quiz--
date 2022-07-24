@@ -27,45 +27,20 @@
     </div>
 
 
-    <div id="diff">
-        <h2>Select Challenge</h2>
-        <button onclick="level(1)">Novice</button><br />
-        <button onclick="level(2)">Intermediate</button><br />
-        <button onclick="level(3)">Proficient</button><br />
-        <button onclick="level(4)">Expert</button>
-        <div style="height:30px"></div>
-    </div>
-
-    <div id="quizbody">
-        <div style="height:40px"></div>
-        <div id='serial'><span>Solve</span>
-        <p id="question"></p>
-
-        <center><div id="timer">
-            <div id="bar"></div>
-        </div></center>
-
-        <input id="answer" readonly>
-        <button id="del" style="width:35px;padding:5px;">←</button>
-      
-        <button id="checkbtn" onclick="check()">Check</button>
-        <div id="nums">     
-            <button onclick="ins(1)">1</button>
-            <button onclick="ins(2)">2</button>
-            <button onclick="ins(3)">3</button>
-            <button onclick="ins(4)">4</button>          
-            <button onclick="ins(5)">5</button>
-            <button onclick="ins(6)">6</button>
-            <button onclick="ins(7)">7</button>
-            <button onclick="ins(8)">8</button>            
-            <button onclick="ins(9)">9</button>
-            <button onclick="ins(0)">0</button>
-            <button onclick="ins('-')">-</button>
-            <button onclick="ins('.')">.</button>
-        </div>
+    <section id="diff">
         
-        <button id="res">Refresh</button>
-    </div>
+        <button id="start-button">"Start</button>
+        <div style="height:30px"></div>
+    </section>
+
+    <section id="quizbody">
+        <h2>Select Challenge</h2>
+        <button class=answer data-correct="true" id="answer-a">a</button><br />
+        <button class=answer data-correct="false" id="answer-b">b</button><br />
+        <button class=answer data-correct="false" id="answer-c">c</button><br />
+        <button class=answer data-correct="false" id="answer-d">d</button><br />
+        <button>Expert</button>  
+    </section>
         
     <script src="generate.js"></script>
     
